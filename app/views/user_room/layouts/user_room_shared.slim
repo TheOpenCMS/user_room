@@ -11,14 +11,14 @@ html.w100p.h100p
   body.w100p.h100p.ffa
     .ptz_table.h100p.w100p
       .ptz_row
-        = render template: 'user_room/layouts/items/header'
+        = render template: 'app_theme/layouts/items/header'
       .ptz_row.h100p
         .w80p.ma
           .mt20.mb20
             = render partial: 'notifications/flash'
             = yield
       .ptz_row
-        = render template: 'user_room/layouts/items/footer'
+        = render template: 'app_theme/layouts/items/footer'
     = yield :crop_tool
 
   = yield(:base_assets)
